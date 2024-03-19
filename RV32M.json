@@ -1,0 +1,68 @@
+{
+    "r-type": {
+        "mul": {
+            "opcode": "0110011",
+            "funct3": "000",
+            "funct7": "0000001",
+            "exec": "rs * rt",
+            "funcUnit": "mult",
+            "clockNeeded": 1
+        },
+        "mulh": {
+            "opcode": "0110011",
+            "funct3": "001",
+            "funct7": "0000001",
+            "exec": "rs * rt",
+            "funcUnit": "mult",
+            "clockNeeded": 1
+        },
+        "mulsu": {
+            "opcode": "0110011",
+            "funct3": "010",
+            "funct7": "0000001",
+            "exec": "rs * rt",
+            "funcUnit": "mult",
+            "clockNeeded": 1
+        },
+        "mulu": {
+            "opcode": "0110011",
+            "funct3": "011",
+            "funct7": "0000001",
+            "exec": "rs * rt",
+            "funcUnit": "mult",
+            "clockNeeded": 1
+        },
+        "div": {
+            "opcode": "0110011",
+            "funct3": "100",
+            "funct7": "0000001",
+            "exec": "rs / rt",
+            "funcUnit": "div",
+            "clockNeeded": 1
+        },
+        "divu": {
+            "opcode": "0110011",
+            "funct3": "101",
+            "funct7": "0000001",
+            "exec": "rs / rt",
+            "funcUnit": "div",
+            "clockNeeded": 1
+        },
+        "rem": {
+            "opcode": "0110011",
+            "funct3": "110",
+            "funct7": "0000001",
+            "exec": "rs % rt",
+            "funcUnit": "div",
+            "clockNeeded": 1
+        },
+        "remu": {
+            "opcode": "0110011",
+            "funct3": "111",
+            "funct7": "0000001",
+            "exec": "rs % rt",
+            "funcUnit": "div",
+            "clockNeeded": 1
+        }
+    }
+}

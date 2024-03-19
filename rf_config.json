@@ -1,0 +1,203 @@
+{
+    "IntRegisters": [
+        {
+            "symbolic_name": "Zero",
+            "value": 0,
+            "read_only": true
+        },
+        {
+            "symbolic_name": "ra"
+        },
+        {
+            "symbolic_name": "sp"
+        },
+        {
+            "symbolic_name": "gp"
+        },
+        {
+            "symbolic_name": "tp"
+        },
+        {
+            "symbolic_name": "t0"
+        },
+        {
+            "symbolic_name": "t1"
+        },
+        {
+            "symbolic_name": "t2"
+        },
+        {
+            "symbolic_name": "s0"
+        },
+        {
+            "symbolic_name": "s1"
+        },
+        {
+            "symbolic_name": "a0"
+        },
+        {
+            "symbolic_name": "a1"
+        },
+        {
+            "symbolic_name": "a2"
+        },
+        {
+            "symbolic_name": "a3"
+        },
+        {
+            "symbolic_name": "a4"
+        },
+        {
+            "symbolic_name": "a5"
+        },
+        {
+            "symbolic_name": "a6"
+        },
+        {
+            "symbolic_name": "a7"
+        },
+        {
+            "symbolic_name": "s2"
+        },
+        {
+            "symbolic_name": "s3"
+        },
+        {
+            "symbolic_name": "s4"
+        },
+        {
+            "symbolic_name": "s5"
+        },
+        {
+            "symbolic_name": "s6"
+        },
+        {
+            "symbolic_name": "s7"
+        },
+        {
+            "symbolic_name": "s8"
+        },
+        {
+            "symbolic_name": "s9"
+        },
+        {
+            "symbolic_name": "s10"
+        },
+        {
+            "symbolic_name": "s11"
+        },
+        {
+            "symbolic_name": "t3"
+        },
+        {
+            "symbolic_name": "t4"
+        },
+        {
+            "symbolic_name": "t5"
+        },
+        {
+            "symbolic_name": "t6"
+        }
+    ],
+    "FPRegisters": [
+        {
+            "symbolic_name": "ft0"
+        },
+        {
+            "symbolic_name": "ft1"
+        },
+        {
+            "symbolic_name": "ft2"
+        },
+        {
+            "symbolic_name": "ft3"
+        },
+        {
+            "symbolic_name": "ft4"
+        },
+        {
+            "symbolic_name": "ft5"
+        },
+        {
+            "symbolic_name": "ft6"
+        },
+        {
+            "symbolic_name": "ft7"
+        },
+        {
+            "symbolic_name": "ft1"
+        },
+        {
+            "symbolic_name": "fs0"
+        },
+        {
+            "symbolic_name": "fs1"
+        },
+        {
+            "symbolic_name": "fa0"
+        },
+        {
+            "symbolic_name": "fa1"
+        },
+        {
+            "symbolic_name": "fa2"
+        },
+        {
+            "symbolic_name": "fa3"
+        },
+        {
+            "symbolic_name": "fa4"
+        },
+        {
+            "symbolic_name": "fa5"
+        },
+        {
+            "symbolic_name": "fa6"
+        },
+        {
+            "symbolic_name": "fa7"
+        },
+        {
+            "symbolic_name": "fs2"
+        },
+        {
+            "symbolic_name": "fs3"
+        },
+        {
+            "symbolic_name": "fs4"
+        },
+        {
+            "symbolic_name": "fs5"
+        },
+        {
+            "symbolic_name": "fs6"
+        },
+        {
+            "symbolic_name": "fs7"
+        },
+        {
+            "symbolic_name": "fs8"
+        },
+        {
+            "symbolic_name": "fs9"
+        },
+        {
+            "symbolic_name": "fs10"
+        },
+        {
+            "symbolic_name": "fs11"
+        },
+        {
+            "symbolic_name": "ft8"
+        },
+        {
+            "symbolic_name": "ft9"
+        },
+        {
+            "symbolic_name": "ft10"
+        },
+        {
+            "symbolic_name": "ft11"
+        }
+    ]
+}

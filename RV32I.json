@@ -1,0 +1,282 @@
+{
+    "r-type": {
+        "add": {
+            "opcode": "0110011",
+            "funct3": "000",
+            "funct7": "0000000",
+            "exec": "rs + rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "sub": {
+            "opcode": "0110011",
+            "funct3": "000",
+            "funct7": "0100000",
+            "exec": "rs - rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "sll": {
+            "opcode": "0110011",
+            "funct3": "001",
+            "funct7": "0000000",
+            "exec": "rs << rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "slt": {
+            "opcode": "0110011",
+            "funct3": "010",
+            "funct7": "0000000",
+            "exec": "1 if (rs < rt) else 0",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "sltu": {
+            "opcode": "0110011",
+            "funct3": "011",
+            "funct7": "0000000",
+            "exec": "1 if (rs < rt) else 0",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "xor": {
+            "opcode": "0110011",
+            "funct3": "100",
+            "funct7": "0000000",
+            "exec": "rs ^ rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "srl": {
+            "opcode": "0110011",
+            "funct3": "101",
+            "funct7": "0000000",
+            "exec": "rs >> rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "sra": {
+            "opcode": "0110011",
+            "funct3": "101",
+            "funct7": "0100000",
+            "exec": "rs >> rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "or": {
+            "opcode": "0110011",
+            "funct3": "110",
+            "funct7": "0000000",
+            "exec": "rs | rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }, "and": {
+            "opcode": "0110011",
+            "funct3": "111",
+            "funct7": "0000000",
+            "exec": "rs & rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }
+    },
+    "i-type": {
+        "addi": {
+            "opcode": "0010011",
+            "funct3": "000",
+            "exec": "rs + imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "xori": {
+            "opcode": "0010011",
+            "funct3": "100",
+            "exec": "rs ^ imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "ori": {
+            "opcode": "0010011",
+            "funct3": "110",
+            "exec": "rs | imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "andi": {
+            "opcode": "0010011",
+            "funct3": "111",
+            "exec": "rs & imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "slti": {
+            "opcode": "0010011",
+            "funct3": "010",
+            "exec": "1 if (rs < imm) else 0",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "sltiu": {
+            "opcode": "0010011",
+            "funct3": "011",
+            "exec": "1 if (rs < imm) else 0",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "slli": {
+            "opcode": "0010011",
+            "funct3": "001",
+            "imm": "0000000",
+            "exec": "rs << imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "srli": {
+            "opcode": "0010011",
+            "funct3": "101",
+            "imm": "0000000",
+            "exec": "rs >> imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "srai": {
+            "opcode": "0010011",
+            "funct3": "101",
+            "imm": "0100000",
+            "exec": "rs >> imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "lb": {
+            "opcode": "0000011",
+            "funct3": "000",
+            "exec": "rs + imm",
+            "length": 8,
+            "funcUnit": "ld",
+            "clockNeeded": 2
+        },
+        "lh": {
+            "opcode": "0000011",
+            "funct3": "001",
+            "exec": "rs + imm",
+            "length": 16,
+            "funcUnit": "ld",
+            "clockNeeded": 2
+        },
+        "lw": {
+            "opcode": "0000011",
+            "funct3": "010",
+            "exec": "rs + imm",
+            "length": 32,
+            "funcUnit": "ld",
+            "clockNeeded": 2
+        },
+        "lbu": {
+            "opcode": "0000011",
+            "funct3": "100",
+            "exec": "rs + imm",
+            "length": 8,
+            "funcUnit": "ld",
+            "clockNeeded": 2
+        },
+        "lhu": {
+            "opcode": "0000011",
+            "funct3": "101",
+            "exec": "rs + imm",
+            "length": 16,
+            "funcUnit": "ld",
+            "clockNeeded": 2
+        },
+        "jalr": {
+            "opcode": "1100111",
+            "funct3": "000",
+            "exec": "PC + 4, rs + imm",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }
+    },
+    "s-type": {
+        "sb": {
+            "opcode": "0100011",
+            "funct3": "000",
+            "exec": "rs + imm",
+            "length": 8,
+            "funcUnit": "ld",
+            "clockNeeded": 1
+        },
+        "sh": {
+            "opcode": "0100011",
+            "funct3": "001",
+            "exec": "rs + imm",
+            "length": 16,
+            "funcUnit": "ld",
+            "clockNeeded": 1
+        },
+        "sw": {
+            "opcode": "0100011",
+            "funct3": "010",
+            "exec": "rs + imm",
+            "length": 32,
+            "funcUnit": "ld",
+            "clockNeeded": 1
+        }
+    },
+    "b-type": {
+        "beq": {
+            "opcode": "1100011",
+            "funct3": "000",
+            "exec": "rs == rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "bne": {
+            "opcode": "1100011",
+            "funct3": "001",
+            "exec": "rs != rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "blt": {
+            "opcode": "1100011",
+            "funct3": "100",
+            "exec": "rs < rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "bge": {
+            "opcode": "1100011",
+            "funct3": "101",
+            "exec": "rs >= rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "bltu": {
+            "opcode": "1100011",
+            "funct3": "110",
+            "exec": "rs < rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "bgeu": {
+            "opcode": "1100011",
+            "funct3": "111",
+            "exec": "rs >= rt",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }
+    },
+    "u-type": {
+        "lui": {
+            "opcode": "0110111",
+            "exec": "imm << 12",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        },
+        "auipc": {
+            "opcode": "0010111",
+            "exec": "PC + (imm << 12)",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }
+    },
+    "uj-type": {
+        "jal": {
+            "opcode": "1101111",
+            "exec": "PC + 4",
+            "funcUnit": "add",
+            "clockNeeded": 1
+        }
+    }
+}
